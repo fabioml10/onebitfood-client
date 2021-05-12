@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Container from 'react-bootstrap/Container'
 import Header from '../components/Header'
 
+import { RecoilRoot } from 'recoil'
+
 import '../styles/globals.scss'
 
 function MyApp ({ Component, pageProps }) {
@@ -15,7 +17,9 @@ function MyApp ({ Component, pageProps }) {
       <main>
         <Header />
         <Container className='mt-5'>
-          <Component {...pageProps} />
+          <RecoilRoot>
+            <Component {...pageProps} />
+          </RecoilRoot>
         </Container>
       </main>
     </>
