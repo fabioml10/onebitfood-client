@@ -4,7 +4,7 @@ import { FaStar } from 'react-icons/fa'
 import Image from 'next/image'
 import Link from 'next/link'
 import toCurrency from '../../../services/toCurrency'
-import truncateString from '../../../services/trucanteString'
+import truncateString from '../../../services/truncateString'
 
 const Restaurant = (props) => (
   <Col lg={6} sm={6} xs={12} className='mb-4'>
