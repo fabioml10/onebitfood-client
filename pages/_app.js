@@ -7,6 +7,7 @@ function MyApp ({ Component, pageProps }) {
       {/* Head pode existir em quanquer página */}
       <Head>
         <title>OneBitFood</title>
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
         <Component {...pageProps} />
