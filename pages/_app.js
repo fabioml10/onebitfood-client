@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Container from 'react-bootstrap/Container'
+import Header from '../components/Header'
 import '../styles/globals.scss'
 
 function MyApp ({ Component, pageProps }) {
@@ -10,7 +12,10 @@ function MyApp ({ Component, pageProps }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
-        <Component {...pageProps} />
+        <Header />
+        <Container className='mt-5'>
+          <Component {...pageProps} />
+        </Container>
       </main>
     </>
   )
